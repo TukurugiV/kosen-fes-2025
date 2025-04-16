@@ -12,14 +12,12 @@ import Timetable from "./pages/Timetable";
 import Map from "./pages/Map";
 import "./App.css";
 
-// Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const appRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Initial animation when the app loads
     const ctx = gsap.context(() => {
       gsap.from(".app-container", {
         opacity: 0,
